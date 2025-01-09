@@ -1,0 +1,4 @@
+# Configuration file for the project
+
+[Settings]
+# Add your settings here
