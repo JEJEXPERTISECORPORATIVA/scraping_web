@@ -41,7 +41,7 @@ def login():
         # Verifica se pelo menos uma linha das condições foi atendida
         if (usuario_valido & senha_valida & uuid_valido).any():  # Se qualquer linha for válida
             logging.info(f'Login bem-sucedido: Usuário: {username}, UUID: {machine_uuid}')
-            return redirect('http://127.0.0.1:5000')  # Redireciona para o servidor Flask na porta 5000
+            return redirect('http://127.0.0.1:5002')  # Redireciona para o servidor Flask na porta 5000
         else:
             logging.warning(f'Falha no login: Usuário: {username}, UUID: {machine_uuid} - Credenciais inválidas')
             error_message = f"UUID: {machine_uuid} - Credenciais inválidas"
